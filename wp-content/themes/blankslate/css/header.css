@@ -1,0 +1,125 @@
+/*header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+  border-bottom: 2px solid #DCDCDC;
+}*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #ffffff;
+  border-bottom: 2px solid #DCDCDC;
+  z-index: 999;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+  margin: 35px 50px;
+  height: 25px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#menu {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+  line-height: 90px;
+}
+
+#menu li {
+  display: inline-block;
+
+}
+
+header a {
+  margin-left: 30px;
+  color: #808080;
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-size: 0.8em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header.smaller {
+  height: 70px;
+}
+
+header.smaller #menu {
+  line-height: 70px;
+}
+
+header.smaller #logo {
+  margin: 25px;
+  height: 18px;
+}
+
+header.smaller a {
+  padding-bottom: 22px;
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+.slicknav_nav a {
+  color: #333;
+}
+
+.slicknav_btn {
+  background: #ffffff;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  background: #333;
+}
+
+.logo {
+    float:left;
+    margin: 10px 20px;
+    height: 25px;
+}
+
+@media screen and (max-width: 866px) {
+	/* #menu is the original menu */
+	header {
+		display:none;
+	}
+
+	.slicknav_menu {
+		display:block;
+	}
+}
+
+
+.active {
+  border-bottom: 3px solid #DD6632;
+}
